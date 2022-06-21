@@ -1,0 +1,30 @@
+.issue {
+    padding: 1em;
+    border-bottom: 1px solid lightgrey
+}
+
+.issue:last-child {
+    border-bottom: none;
+}
+
+.issue h4 {
+    margin: 0 0 0.4em;
+}
+
+.issue h4 a {
+    color: black;
+    text-decoration: none;
+}
+
+.issue h4 a:hover {
+    color: blue;
+}
+
+.issueMeta {
+    font-size: 0.8em;
+    color: gray;
+}
+
+.issueMeta a {
+    color: gray;
+}

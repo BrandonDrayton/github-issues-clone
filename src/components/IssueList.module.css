@@ -1,7 +1,12 @@
+body {
+    background-color: rgb(34, 39, 46)
+}
+
 .issueList {
     max-width: 1200px;
     width: 95%;
     margin: 30px auto;
     border: 1px solid lightgrey;
     border-radius: 8px;
+    background-color: rgb(45, 51, 59);
 }

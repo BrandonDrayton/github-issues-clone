@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Issue from './Issue'
 import styles from './IssueList.module.css'
+import Labels from './Label'
 
 function IssueList() {
     const [issues, setIssues] = useState([])
@@ -15,7 +16,9 @@ function IssueList() {
         <div className={styles.issueList}>
             {
                 issues.map(issue => {
+                    console.log(issue.labels[0])
                     return <Issue key={issue.id} issue={issue} />
+
                 })
             }
         </div>

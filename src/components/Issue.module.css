@@ -1,7 +1,14 @@
 .issue {
     padding: 1em;
-    border-bottom: 1px solid lightgrey
+    border-bottom: 1px solid lightgrey;
+    background-color: rgb(45, 51, 59);
 }
+
+.issue:hover {
+    background-color: rgb(94, 94, 94);
+    border-radius: 8px;
+}
+
 
 .issue:last-child {
     border-bottom: none;
@@ -9,15 +16,21 @@
 
 .issue h4 {
     margin: 0 0 0.4em;
+    margin-top: 5px;
+    color: rgb(106, 131, 144)
 }
 
 .issue h4 a {
-    color: black;
+    color: #adbac7;
     text-decoration: none;
 }
 
 .issue h4 a:hover {
-    color: blue;
+    color: rgb(78, 144, 227);
+}
+
+.issue h6 {
+    margin: 10px 10px 10px 10px;
 }
 
 .issueMeta {

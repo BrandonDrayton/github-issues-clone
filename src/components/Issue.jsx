@@ -3,12 +3,17 @@ import PropTypes from 'prop-types'
 import styles from './Issue.module.css'
 
 function Issue(props) {
-    const { title, user, number, created_at } = props.issue
+    const { title, user, number, created_at, labels } = props.issue
     const formattedDate = new Date(created_at)
 
     return (
         <div className={styles.issue}>
             <h4><a href="#issue">{title}</a></h4>
+            {labels.map((label, i) =>
+                <span key={i} className={styles.issueLabel} style={{ backgroundColor: `#{label.color}` }}>
+                    <a href={label.url}>{label.name}</a>
+                </span>
+            )}
             <div className={styles.issueMeta}>
                 #{number} opened at {formattedDate.toLocaleString()} by <a href={user.html_url}>{user.login}</a>
             </div>
